@@ -1062,6 +1062,30 @@ For more details on how to clone the repository in order to create a copy for ow
   access you will need to clone the forked repository.
 - For more details on how to fork the repo, in order to for example suggest any changes to the project you can visit:<https://docs.github.com/en/get-started/quickstart/fork-a-repo>
 
+## 🔐 Removing `env.py` from Version Control (Forked Repository)
+
+When I forked this repository, the file `env.py` was already committed in the original project. Since `env.py` may contain sensitive information (like API keys or database credentials), it should not be tracked by Git or made public.
+
+Here’s what I did to clean it up in this fork:
+
+### 1. Stop Tracking the File
+
+To remove `env.py` from version control **without deleting it locally**, run:
+
+git rm --cached env.py
+git commit -m "Remove env.py from version control"
+git push
+
+### 2. Create env.py
+
+### 3. Copy and Paste All data Inside It
+
+### 4. Prevent Future Tracking
+
+To ensure env.py isn’t committed again, add it to .gitignore:
+
+env.py
+
 
 ## Credits
 
