@@ -43,7 +43,7 @@
     <!-- Like and comment-->
     <div class="row">
         <div class="col-12">
-        <strong class="text-secondary">
+        <div class="text-secondary">
                 <button id="like-button-{{ post.id }}" class="btn btn-outline-primary like-button mb-3" data-post-id="{{ post.id }}">
                     <span class="like-text">Like</span>
                     <i id="like-icon-{{ post.id }}" class="fa {% if user_likes %}fa-thumbs-up text-primary{% else %}fa-thumbs-o-up{% endif %}"></i>
@@ -60,7 +60,7 @@
                         </a>
                     </div>
                 {% endif %}
-        </strong>
+                </div>
         </div>
         <div class="col-12">
         <hr>
