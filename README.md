@@ -1064,9 +1064,9 @@ For more details on how to clone the repository in order to create a copy for ow
 
 ## 🔐 Removing `env.py` from Version Control (Forked Repository)
 
-When I forked this repository, the file `env.py` was already committed in the original project. Since `env.py` may contain sensitive information (like API keys or database credentials), it should not be tracked by Git or made public.
+After I submit my project I got a feedback about env.py file and this happened because When I forked this repository, the file `env.py` was already committed in the original repo. Since `env.py` may contain sensitive information (like API keys or database credentials), it should not be tracked by Git or made public.
 
-Here’s what I did to clean it up in this fork:
+Here’s what I did to clean it up in this proiject repo:
 
 ### 1. Stop Tracking the File
 
